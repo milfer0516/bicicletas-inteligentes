@@ -2,7 +2,10 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0, user-scalable=no, maximun-scale=1.0, minimun-scale=1.0"
+      />
       <link rel="stylesheet" href="css/styles.css" type="text/css" />
       <link rel="stylesheet" href="css/estilos.css" type="text/css" />
       <title>Bikes Intelligents</title>
@@ -10,39 +13,37 @@
 
    <body>
       <header>
-         <div class="contenedor">
-            <div class="barra">
-               <div>
-                  <a href="/">
-                     <img class="logo" src="img/logo.jpeg" alt="logo_bici" />
-                  </a>
-               </div>
-               <nav id="menu">
-                  <ul class="menu-items active">
-                     <li class="active"><a href="#">Inicio</a></li>
-                     <li><a href="#productos">Productos</a></li>
-                     <li><a href="#main">Caracteristicas</a></li>
-                     <li><a href="#contacto">Contactenos</a></li>
-                  </ul>
-               </nav>
-               <div class="menu-toggle">
-                  <i class="fa fa-bars"></i>
-               </div>
-            </div>
-
-            <div class="img-principal">
-               <h1 class="h1">Bicicletas Inteligentes</h1>
-               <img
-                  class="img-header"
-                  src="https://ep01.epimg.net/tecnologia/imagenes/2017/01/07/actualidad/1483759960_726296_1483760530_noticia_normal_recorte1.jpg"
-                  alt="img-bici-header"
-               />
-            </div>
+         <div class="menu_bar">
+            <a href="#" class="btn-menu"><i class="fa fa-bars"></i>Menu</a>
          </div>
-
-         <!--Termina Contenedor-->
+         <nav>
+            <ul>
+               <li>
+                  <a href="/"><i class="fas fa-home"></i>Inicio</a>
+               </li>
+               <li>
+                  <a href="#productos"><i class="fas fa-globe"></i>Productos</a>
+               </li>
+               <li>
+                  <a href="#main"
+                     ><i class="fas fa-clipboard-list"></i>Caracteristicas</a
+                  >
+               </li>
+               <li>
+                  <a href="#contacto"
+                     ><i class="fas fa-envelope"></i>Contactanos</a
+                  >
+               </li>
+            </ul>
+         </nav>
+         <div class="img-principal">
+            <h1 class="h1">Bicicletas Inteligentes</h1>
+            <img
+               src="https://ep01.epimg.net/tecnologia/imagenes/2017/01/07/actualidad/1483759960_726296_1483760530_noticia_normal_recorte1.jpg"
+               alt=""
+            />
+         </div>
       </header>
-
       <section class="contenedor section">
          <h2 id="productos">Productos</h2>
          <span class="line"></span>
@@ -229,6 +230,7 @@
             src="https://kit.fontawesome.com/dc6deb0be1.js"
             crossorigin="anonymous"
          ></script>
+         <script src="http://code.jquery.com/jquery-latest.js"></script>
          <script src="/javascript/app.js" defer></script>
       </footer>
    </body>
